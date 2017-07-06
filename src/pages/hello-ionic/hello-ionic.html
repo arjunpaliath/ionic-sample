@@ -3,23 +3,23 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Hotline Sample App</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-  <h3>Welcome to your first Ionic app!</h3>
+  <h3>Welcome to Hotline Ionic Sample app!</h3>
 
   <p>
-    This starter project is our way of helping you get a functional app running in record time.
+    This is a starter project from ionic with Hotline SDK.
   </p>
   <p>
-    Follow along on the tutorial section of the Ionic docs!
+    <button ion-button color="primary" (click) = "openSupport()">Conversations</button>
   </p>
   <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    <button ion-button color="primary" (click) = "openFAQs()">FAQs</button>
   </p>
 
 </ion-content>

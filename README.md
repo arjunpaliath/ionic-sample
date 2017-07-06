@@ -1,21 +1,29 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a sample [Ionic](http://ionicframework.com/docs/) app with Hotline SDK.
 
-## How to use this template
+## How to use this app
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+Once you have have set up Ionic,
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+ 1. Clone or download this project.
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTutorial tutorial
+ 2. Add the required platform to it using the following code
+ ```bash
+	ionic cordova platform add ios
+	ionic cordova run ios
 ```
+ 3. Add the hotline plugin to this project using the following snippet:
+```
+ionic cordova plug add hotline
+```
+ 4. Add the modified Hotline Push Plugin to this project.
+```
+cordova plugin add https://github.com/freshdesk/phonegap-plugin-push.git
+```
+ 5. Replace ```<Your App Id>``` and ```<Your App Key>``` in app.component.ts with your Hotline account's App ID and App Key.
 
-Then, to run it, cd into `myTutorial` and run:
+ 6. Replace the ```<Sender ID>``` with your FCM Project's Sender ID.
+
+ 7. Then, to run it, cd into `ionic-sample` and run:
 
 ```bash
 $ ionic cordova platform add ios
@@ -23,4 +31,3 @@ $ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
-

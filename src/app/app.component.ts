@@ -55,7 +55,11 @@ export class MyApp {
     var self = this;
     self.hotline.init({
         appId: "<Your App Id>",
-        appKey: "<Your App Key>"
+        appKey: "<Your App Key>",
+        agentAvatarEnabled : true,
+        cameraCaptureEnabled : false,
+        voiceMessagingEnabled : false,
+        pictureMessagingEnabled : true
     },
     function(success){
     console.log("Hotline successfully intialized");
@@ -81,7 +85,8 @@ export class MyApp {
           ios: {
             alert: "true",
             badge: false,
-            sound: "true"
+            sound: "true",
+            "clearBadge": "true"
           },
           windows: {}
     }, function() {

@@ -13,7 +13,7 @@ Once you have have set up Ionic,
 ```
  3. Add the hotline plugin to this project using the following snippet:
 ```
-ionic cordova plug add hotline
+ionic cordova plugin add hotline
 ```
  4. Add the modified Hotline Push Plugin to this project.
 ```
